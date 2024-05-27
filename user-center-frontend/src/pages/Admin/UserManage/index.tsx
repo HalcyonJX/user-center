@@ -3,7 +3,6 @@ import type { ActionType, ProColumns } from '@ant-design/pro-components';
 import { ProTable, TableDropdown } from '@ant-design/pro-components';
 import {Button, Dropdown, Image, Space, Tag} from 'antd';
 import { useRef } from 'react';
-import request from 'umi-request';
 import {searchUser} from "@/services/ant-design-pro/api";
 
 
