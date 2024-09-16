@@ -12,6 +12,7 @@ import javax.servlet.http.HttpServletRequest;
 * @createDate 2024-09-15 23:41:23
 */
 public interface UserService extends IService<User> {
+
     /**
      * 注册接口
      * @param userAccount 账号
@@ -29,4 +30,11 @@ public interface UserService extends IService<User> {
      * @return 脱敏后的用户信息
      */
     User userLogin(String userAccount, String userPassword, HttpServletRequest request);
+
+    /**
+     * 用户脱敏
+     * @param originUser 原始用户
+     * @return 返回脱敏用户
+     */
+    User getSafetyUser(User originUser);
 }
